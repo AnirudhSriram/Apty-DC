@@ -1,0 +1,30 @@
+.input{
+    background-color: rgba(197, 211, 232, 0.1);
+    border: 2px solid #C5D3E8;
+    border-radius: 6px;
+    opacity: 0.6000000238418579;
+    width: 18em;
+    height: 3em;
+    display:grid;
+    grid-template-columns: auto 90%;
+    padding-right:1em;
+    img{
+        align-self: center;
+    }
+
+    input{
+        border:none;
+        width:auto;
+        border-radius: 6px;
+        color:#7F8A9C;
+        background-color: transparent;
+    }
+
+    input:focus {
+        outline:none;
+    }
+
+    ::placeholder { 
+        font-style: italic;
+    }
+}
