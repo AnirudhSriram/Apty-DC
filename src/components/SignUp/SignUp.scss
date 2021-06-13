@@ -1,87 +1,210 @@
 @import "../../variables.scss";
 
 
-.container{
-    background-color: #ffffff;
-    margin: 9.375em auto;
-    width:50em;
-    height: 38em;
-    border-radius: 20px;
+.container{        
     display: grid;
-    overflow: hidden;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 4fr;
+    grid-gap:none;
+    background-color: #ffffff;
+    font-size: 16px;
+    border-radius: 20px;
+    height:100vh;
+    width: 100vw;
+    padding: none;
+    border:none;
+    margin:none;
+
+    .right{
+        order: 1;
+        background: url("../../Assets/Hero/hero.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
     .left{
-        padding: 1em 3em;
+        order:2;
+        padding: 0 1.875em;
 
         .header{
+            width: 100%;
             text-align: left;
-            margin-bottom: 1.8em;
-            h1{
-                font-family: Poppins;
-                color: $primary;
-                font-size: 24px;
-                font-weight: 'semi-bold';
-        }
-        p{
-            color: $secondary;
-            font-family: sans-serif;
-            font-style: italic;
-            font-size: 18px;
-        }
-        span{
-            display: block;
+            margin-bottom: 2em;
+                .header-title{
+                    font-size: 24px;
+                    h1{
+                        padding:none;
+                        font-family: Poppins;
+                        color: $primary;
+                        font-size: 24px;
+                        font-weight: 'semi-bold';
+                        line-height: 29px;
+                    }
+            }
+
+            .header-content{
+                padding:none;
+                font-size: 18px;
+                font-family: 'Open Sans';
+                font-style: italic;
+                color: $secondary;
+                line-height: 26px;
+                span{
+                    display: block;
+                }
             }
         }
-    
+
         .form{
             display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 1.28em;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap:1.28em;
+            font-family: 16px;
+            width:100%;
+            overflow-x: hidden;
+            padding:1em 0;
             .tc{
-                margin-bottom: 5em;
                 display: grid;
                 grid-template-columns: auto 95%;
                 align-items: center;
-                input[type="checkbox"] {
-                    background-color: rgba(197, 211, 232, 0.1);
-                    border: 2px solid #C5D3E8;
-                    border-radius: 6px;
-                    opacity: 0.6000000238418579;
-                    height:1.5em;
-                    width:1.5em;
-                }
+                grid-gap: 10px;
+                border:0px solid black;
+                font-family: 'Open Sans';
+                color: $secondary;
+                font-weight: initial;
                 font-size: 14px;
-                color:$secondary;
-                font-family: sans-serif;
+                margin-bottom: 1em;
+                input[type="checkbox"] {
+                    height: 1.5em;
+                    width: 1.5em;
+                }
                 span{
-                    color:$primary
+                    color: $primary;
                 }
             }
 
-            .submit{
+                .submit{
                 background-image: linear-gradient(135deg, #2B2ECF 0%, #652BCF 100%);
                 border-radius: 1.8em;
                 text-align: left;
                 color:#ffffff;
-                font-size: 14px;
-                // height: 3.3em;
+                font-size: 18px;
                 font-family: 'Open Sans';
-                padding:1.2em 1.8em;
                 font-weight: bold;
-                // line-height: 20px;
+                align-items: center;
+                padding: 0 1.67em;
+                height: 3.3em;
+                font-weight: bold;
+                border: transparent;
                 display: flex;
                 opacity: .5;
                 justify-content: space-between;
             }
         }
+    }
 }
 
 
-.right{
-    background: url("../../Assets/Hero/hero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+@media only screen
+  and (min-device-width: 1200px) { 
+    .container{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    width: 50em;
+    height: 38em;
+    grid-template-columns: 1fr 1fr;
+    overflow:hidden;
+    font-size: 16px;
+    .left{
+
+        order:1;
+        padding: 2.5em 3.125em;
+    }
+    }
+}
+// .container{
+//     background-color: #ffffff;
+//     margin: 9.375em auto;
+//     width:50em;
+//     height: 38em;
+//     border-radius: 20px;
+//     display: grid;
+//     overflow: hidden;
+//     grid-template-columns: 1fr 1fr;
+//     .left{
+//         padding: 1em 3em;
+
+//         .header{
+//             text-align: left;
+//             margin-bottom: 1.8em;
+//             h1{
+//                 font-family: Poppins;
+//                 color: $primary;
+//                 font-size: 24px;
+//                 font-weight: 'semi-bold';
+//         }
+//         p{
+//             color: $secondary;
+//             font-family: sans-serif;
+//             font-style: italic;
+//             font-size: 18px;
+//         }
+//         span{
+//             display: block;
+//             }
+//         }
     
-}
-}
+//         .form{
+//             display: grid;
+//             grid-template-columns: 1fr;
+//             grid-gap: 1.28em;
+//             .tc{
+//                 margin-bottom: 5em;
+//                 display: grid;
+//                 grid-template-columns: auto 95%;
+//                 align-items: center;
+//                 input[type="checkbox"] {
+//                     background-color: rgba(197, 211, 232, 0.1);
+//                     border: 2px solid #C5D3E8;
+//                     border-radius: 6px;
+//                     opacity: 0.6000000238418579;
+//                     height:1.5em;
+//                     width:1.5em;
+//                 }
+//                 font-size: 14px;
+//                 color:$secondary;
+//                 font-family: sans-serif;
+//                 span{
+//                     color:$primary
+//                 }
+//             }
+
+//             .submit{
+//                 background-image: linear-gradient(135deg, #2B2ECF 0%, #652BCF 100%);
+//                 border-radius: 1.8em;
+//                 text-align: left;
+//                 color:#ffffff;
+//                 font-size: 14px;
+//                 // height: 3.3em;
+//                 font-family: 'Open Sans';
+//                 padding:1.2em 1.8em;
+//                 font-weight: bold;
+//                 // line-height: 20px;
+//                 display: flex;
+//                 opacity: .5;
+//                 justify-content: space-between;
+//             }
+//         }
+// }
+
+
+// .right{
+//     background: url("../../Assets/Hero/hero.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     overflow: hidden;
+    
+// }
+// }

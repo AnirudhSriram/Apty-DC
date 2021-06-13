@@ -59,7 +59,7 @@ const SignUp = () => {
                 </div>
 
                 <div className="right">
-
+                        {/* <img src="https://marvel-live.freetls.fastly.net/canvas/2021/6/8813f4b2402c4f8b8a38e737b8946608?quality=95&fake=.svg&width=108" /> */}
                 </div>
             </div>
         </>
