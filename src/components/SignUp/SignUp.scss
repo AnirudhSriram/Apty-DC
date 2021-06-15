@@ -3,7 +3,7 @@
 
 .container{        
     display: grid;
-    grid-template-rows: 2fr 4fr;
+    grid-template-rows: 1fr 2.6fr;
     grid-gap:none;
     background-color: #ffffff;
     font-size: 16px;
@@ -20,11 +20,15 @@
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1.2em;
 
     }
     .left{
         order:2;
         padding: 0 1.875em;
+        overflow: auto;
 
         .header{
             width: 100%;
@@ -54,8 +58,8 @@
                 }
             }
         }
-
         .form{
+        form{
             display: grid;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-gap:1.28em;
@@ -78,9 +82,7 @@
                     height: 1.5em;
                     width: 1.5em;
                 }
-                span{
-                    color: $primary;
-                }
+
             }
 
                 .submit{
@@ -102,23 +104,24 @@
             }
         }
     }
+    }
 }
 
 
 @media only screen
   and (min-device-width: 1200px) { 
     .container{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 50em;
     height: 38em;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     overflow:hidden;
     font-size: 16px;
     .left{
-
         order:1;
         padding: 2.5em 3.125em;
     }

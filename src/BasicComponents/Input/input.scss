@@ -1,12 +1,16 @@
 @import "../../variables.scss";
+
+.inputContainer{
+    padding:0;
+    margin: none;
+    overflow: hidden;
 .input{
     background-color: rgba(197, 211, 232, 0.1);
     border: 2px solid #C5D3E8;
     border-radius: 6px;
     height: 3em;
     display:grid;
-    grid-template-columns: auto 90%;
-    padding:0 .5em;
+    grid-template-columns: auto 15em auto;
     img{
         align-self: center;
     }
@@ -27,6 +31,7 @@
     input:focus {
         outline:none;
         opacity: 1;
+        // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     }
 
     ::placeholder { 
@@ -36,4 +41,22 @@
         color:$hints;
         line-height: 20px;
     }
+}
+span{
+    color: $primary;
+    font-family: poppins;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+}
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    color : $secondary;
+    -webkit-box-shadow: 0 0 0 30px $inputBackground inset !important;
+    -webkit-text-fill-color: $secondary !important;
 }

@@ -7,3 +7,13 @@ body {
   overflow: hidden;
 }
 
+
+
+a{
+  text-decoration: none;
+  color: $primary;
+}
+
+a:hover{
+  text-decoration: underline;
+}
