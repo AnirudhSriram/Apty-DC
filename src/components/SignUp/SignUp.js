@@ -27,7 +27,7 @@ const SignUp = () => {
                 return value === "georgie_boy@yahoo.com" ? true : false;
                 break;
             case "Password":
-                return value.length > 6 ? true : false;
+                return value === "cosmo kramer" ? true : false;
                 break;
             case "TermsAndConditions":
                 return value;
