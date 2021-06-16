@@ -1,3 +1,10 @@
+# Valid inputs for the input fields:
+  ### name : George Costanza
+  ### email: georgie_boy@yahoo.com
+  ### password: input length of 6 or more
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
