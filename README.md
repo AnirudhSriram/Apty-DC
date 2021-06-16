@@ -1,7 +1,7 @@
 # Valid inputs for the input fields:
-  ### name : George Costanza
-  ### email: georgie_boy@yahoo.com
-  ### password: input length of 6 or more
+  ### name : "George Costanza"
+  ### email: "georgie_boy@yahoo.com"
+  ### password: "cosmo kramer"
 
 
 
