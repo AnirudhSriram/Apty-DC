@@ -41,7 +41,7 @@
                     font-size: 24px;
                     h1{
                         padding:none;
-                        font-family: Poppins;
+                        font-family: $headFont;
                         color: $primary;
                         font-size: 24px;
                         font-weight: 'semi-bold';
@@ -52,7 +52,7 @@
             .header-content{
                 padding:none;
                 font-size: 18px;
-                font-family: 'Open Sans';
+                font-family: $secondaryFont;
                 font-style: italic;
                 color: $secondary;
                 line-height: 26px;
@@ -75,7 +75,7 @@
                 align-items: center;
                 grid-gap: 10px;
                 border:0px solid black;
-                font-family: 'Open Sans';
+                font-family: $secondaryFont;
                 color: $secondary;
                 font-weight: initial;
                 font-size: 14px;
@@ -93,7 +93,7 @@
                 text-align: left;
                 color:#ffffff;
                 font-size: 18px;
-                font-family: 'Open Sans';
+                font-family: $secondaryFont;
                 font-weight: bold;
                 align-items: center;
                 padding: 0 1.67em;
